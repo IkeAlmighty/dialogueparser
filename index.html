@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type = "text/javascript" src = "js/main.js" async></script>
+        <link rel = "stylesheet" type = "text/css" href = "css/main.css"/>
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123640661-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-123640661-1');
+		</script>
+    </head>
+    <body>
+       <!-- <div class = "content">
+            <header>Dialogue Parser</header><br>
+            <button>choose file</button> (or insert the text into the "Source Text" frame)<br>
+            <button>save</button> 
+        </div>-->
+        
+        <div class = "content">
+            <div id = "button-bar">
+                <h1>character names</h1>
+                <p>
+                    Type a character name and press enter to create a 
+                    tagging button:<br><br> <input id = "tag-adder">
+                </p>
+            </div>
+            <div id = "left-box">
+                <span style = "margin-left: 10px; margin-right: 10px;">Dialogue Line</span>
+                <button id = "prev-button">prev</button>
+                <button id = "next-button">next</button>
+                <textarea id = "dialogue-line"></textarea>
+                <h1> Source Text</h1>
+                <textarea id = "source-dialogue"></textarea>
+                <button id = "reset-button">reset source text</button>
+            </div>
+            <div id = "right-box">
+                <h1>Post-Formatting</h1>
+                <textarea id = "tagged-dialogue"></textarea>
+            </div>
+            <div id = "ad-bar"></div>
+        </div>
+    </body>
+</html>
